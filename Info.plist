@@ -21,6 +21,21 @@
 			<string>BATCH</string>
 		</dict>
 	</array>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleTypeName</key>
+			<string>Shell Script</string>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>sh</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>SCRIPT</string>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>LoLSpectator</string>
 	<key>CFBundleIconFile</key>

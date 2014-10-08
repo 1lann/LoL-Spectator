@@ -54,5 +54,8 @@ if len(sys.argv) > 1:
 		subprocess.call("osascript -e '{}'".format(command), shell=True)
 	spectateGame(contents)
 else:
-	response = subprocess.check_output("osascript -e '{}'".format(askDialog), shell=True)
-	spectateGame(response)
+	try:
+		response = subprocess.check_output("osascript -e '{}'".format(askDialog), shell=True)
+		spectateGame(response)
+	except:
+		pass
