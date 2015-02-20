@@ -36,7 +36,7 @@ buttons {"OK"}
 		subprocess.call("osascript -e '{}'".format(command), shell=True)
 
 askDialog = """
-display dialog "Enter Any Spectate URI or Command" default answer "" ¬
+display dialog "Enter Any Spectate URI or Command" default answer linefeed ¬
 with title "LoL Spectator"
 """
 
