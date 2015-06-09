@@ -8,8 +8,7 @@ import sys
 import os
 
 def spectateGame(rawData):
-	spectateMatch = re.compile('(spectator [\w.]*:\d{1,5} \S* \d{8,12} [A-Za-z0-9]*)')
-	print(rawData.replace("\n", ""))
+	spectateMatch = re.compile('(spectator [\w.]*:\d{1,5} \S* \d{8,12} [A-Za-z0-9]*|replay [\w.]*:\d{1,5} \S* \d{8,12} [A-Za-z0-9]*)')
 	match = spectateMatch.search(rawData.replace("\n", ""))
 	if match:
 		command = 'cd /Applications/League\ of\ Legends.app/Contents/LoL/RADS/solutions/lol_game_client_sln/releases/*/deploy/LeagueOfLegends.app/Contents/MacOS\nriot_launched=true ./LeagueOfLegends 8394 LoLLauncher "" "{}"'
